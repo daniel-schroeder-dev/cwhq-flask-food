@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Pizza</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    </head>
+    <body>
+        {% for _ in range(num_pizzas) %}
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNEc3lIgUW_ODb1VQl6ohNVVTeE0usm2e-93oZQIJ2L5JXcOhbuoyLj5HsjzOFvDiHKt4&usqp=CAU" />
+        {% endfor %}
+
+        <a href="{{ url_for('index') }}">Homepage</a>
+    </body>
+</html>

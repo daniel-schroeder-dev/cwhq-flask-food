@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Tacos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}" />
+    </head>
+    <body>
+        {% for _ in range(num_tacos) %}
+            <img src="https://toppng.com/uploads/preview/tacos-png-pics-taco-11563014603d6qhm8j3no.png" />
+        {% endfor %}
+        <a href="{{ url_for('index') }}">Homepage</a>
+    </body>
+</html>

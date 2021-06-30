@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flask Forms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <form method="POST" action="{{ url_for('show_pizza') }}">
+        <input type="number" name="num_pizzas" placeholder="num pizzas" />
+        <button>Show Pizza</button>
+    </form>
+
+    <form method="POST" action="{{ url_for('show_tacos') }}">
+        <input type="number" name="num_tacos" placeholder="num tacos" />
+        <button>Show Tacos</button>
+    </form>
+</body>
+
+</html>
